@@ -1,0 +1,76 @@
+button {
+            text-align:center;
+            width:80px;
+            height:40px;
+            font-size:25px;
+            font-weight: bold;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            border-radius:50px;
+            border-color: rgb(230, 194, 241);
+           background-color:rgb(230, 191, 241);
+           color:rgb(160, 76, 240);
+           text-shadow:3px 2px rgb(201, 161, 238);
+           box-shadow:2px 3px rgb(180, 134, 241);
+                }
+        button:hover{
+background-color:rgb(161, 91, 226);
+color:blueviolet;
+        }
+        button:active{
+            background-color:rgb(138, 67, 204);
+            color:rgb(113, 21, 233);
+            text-shadow:3px 2px rgb(226, 151, 233);
+        }
+        input {
+            width:400px;
+            height:40px;
+            border-radius:10px;
+            background-color:rgb(238, 202, 253);
+            color:blueviolet;
+            font-size:30px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            box-shadow:2px 3px rgb(180, 134, 241);
+        }
+body{
+    background-image: url("bg.png");
+    background-size: cover;
+    background-position:center;
+}
+.index{
+    background-color:rgb(194, 164, 233);
+    border-radius:20px;
+    padding:0 30px 10px 10px;
+    margin:50px 445px;
+    position: relative;   /* ADD THIS */
+    overflow: hidden;     /* ADD THIS */
+}
+
+.index::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6%;                 /* jitna red boundary hai */
+    height: 200%;
+    background-color:rgb(110, 39, 177);
+    border-radius: 0 20px 20px 0;
+    z-index: 0;
+}
+.index *{
+    position: relative;
+    z-index: 2;
+}
+.outer{
+     background-color:rgb(110, 39, 177);
+padding:40px 0 0 0;
+margin: 0 751px
+ 0 70px;
+border-radius:20px;
+}
+ .inner{
+            background-color:rgb(194, 164, 233);
+            padding:2px 0 15px 0;
+            margin: 0 809px 0 0;
+            border-radius:20px;
+        }
