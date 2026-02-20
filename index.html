@@ -8,18 +8,31 @@
 </head>
 <body>
     <center>
-        <div class="outer">
-    <div class="inner">
-    <h1>CALCULATOR</h1>
-    <input type="text"> <br> <br>
-    <button>A/C</button> <button>=</button> <br> <br>
-    <button>7</button> <button>8</button> <button>9</button> <button>/</button> <br> <br>
-    <button>4</button> <button>5</button> <button>6</button> <button>*</button> <br> <br>
-    <button>1</button> <button>2</button> <button>3</button> <button>-</button> <br> <br>
-    <button>0</button> <button>.</button> <button>%</button> <button>+</button>
-        <div>
+        <div class="container">
+        <h1 class="heading">Ready to Calculate?</h1>
+ <div class="parent">
+<div class="outer">
+<div class="inner">
+
+    <h1 class="calc">CALCULATOR</h1>
+    <input type="text" id="display" readonly> <br> <br>
+    <button data-key="Backspace" onclick="clearDisplay()">C</button> <button onclick="calculate()">=</button> <br> <br>
+    <button data-key="7" onclick="press('7')">7</button> <button data-key="8" onclick="press('8')">8</button> <button data-key="9" onclick="press('9')">9</button> <button data-key="/" onclick="press('/')">/</button> <br> <br>
+    <button data-key="4" onclick="press('4')">4</button> <button data-key="5" onclick="press('5')">5</button> <button data-key="6" onclick="press('6')">6</button> <button data-key="*" onclick="press('*')">*</button> <br> <br>
+    <button data-key="1" onclick="press('1')">1</button> <button data-key="2" onclick="press('2')">2</button> <button data-key="3" onclick="press('3')">3</button> <button data-key="-" onclick="press('-')">-</button> <br> <br>
+    <button data-key="0" onclick="press('0')">0</button> <button data-key="." onclick="press('.')">.</button> <button data-key="%" onclick="press('%')">%</button> <button data-key="+" onclick="press('+')">+</button>
 </div>
-    
+</div>
+</div>
+<div class="tagline">
+    <h2>A simple web calculator built using HTML, CSS, and JavaScript.</h2>
+</div>
+        <figure class="sideimg">
+            <img src="calc.jpg" height="250" id="imgborder">
+            <figcaption id="fig"><strong>AAAAAAAAA......</strong></figcaption>
+        </figure>
+        </div>
+        
 </center>
 </body>
 </html>

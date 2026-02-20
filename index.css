@@ -20,57 +20,85 @@ color:blueviolet;
             background-color:rgb(138, 67, 204);
             color:rgb(113, 21, 233);
             text-shadow:3px 2px rgb(226, 151, 233);
+            transform:scale(1.06);
         }
         input {
             width:400px;
             height:40px;
             border-radius:10px;
-            background-color:rgb(238, 202, 253);
-            color:blueviolet;
+            background-color:rgb(235, 203, 248);
+            border-color:rgb(238, 202, 253);
+            color:rgb(125, 32, 212);
             font-size:30px;
             font-family:Georgia, 'Times New Roman', Times, serif;
             text-align: center;
             box-shadow:2px 3px rgb(180, 134, 241);
         }
 body{
-    background-image: url("bg.png");
+    background-image: url("download.jpg");
     background-size: cover;
     background-position:center;
+    min-height:auto;
+    min-width: none;
+    align-self: auto;
 }
-.index{
-    background-color:rgb(194, 164, 233);
-    border-radius:20px;
-    padding:0 30px 10px 10px;
-    margin:50px 445px;
-    position: relative;   /* ADD THIS */
-    overflow: hidden;     /* ADD THIS */
-}
-
-.index::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 6%;                 /* jitna red boundary hai */
-    height: 200%;
-    background-color:rgb(110, 39, 177);
-    border-radius: 0 20px 20px 0;
-    z-index: 0;
-}
-.index *{
-    position: relative;
-    z-index: 2;
+.parent{
+    position:relative;
+    width:450px;
+    height:450px;
 }
 .outer{
-     background-color:rgb(110, 39, 177);
-padding:40px 0 0 0;
-margin: 0 751px
- 0 70px;
-border-radius:20px;
+    position:absolute;
+    background-color:rgb(110, 35, 180);
+   width:100%;
+   height:98%;
+   border-top-left-radius: 40px;
+   border-top-right-radius:27px;
+   border-bottom-right-radius:36px;
+   border-bottom-left-radius: 27px;
 }
- .inner{
-            background-color:rgb(194, 164, 233);
-            padding:2px 0 15px 0;
-            margin: 0 809px 0 0;
-            border-radius:20px;
-        }
+.inner{
+    position:absolute;
+    background-color:rgb(194, 164, 233);
+    bottom:0;
+    left:0;
+    padding: 0 14px 10px 10px;
+    border-radius:24px;
+}
+.heading{
+   font-size: 75px;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   font-style: oblique;
+   font-weight: bolder;
+   color:rgb(233, 171, 255);
+  -webkit-text-stroke: 3px blueviolet;
+}
+.tagline{
+    width:35%;
+    transform:translate(-92%,-230%);
+    font-size:31px;
+    padding-right:20px;
+    box-sizing: border-box;
+    color:rgb(239, 22, 196);
+    -webkit-text-stroke:1.5px rgb(106, 32, 175) ;
+}
+.sideimg{
+    width:25%;
+    transform:translate(115%,-217%);
+}
+#imgborder{
+ border:3px solid black;
+  border-radius: 20px;
+}   
+#fig{
+  font-size: 20px;
+  color:black;
+  border-color:aliceblue;
+}
+#display{
+    pointer-events: none;
+    user-select: none;
+}
+.calc{
+    color:rgb(113, 42, 180);
+}
