@@ -102,3 +102,6 @@ body{
 .calc{
     color:rgb(113, 42, 180);
 }
+input:focus{
+    outline: none;
+}
