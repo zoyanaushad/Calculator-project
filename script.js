@@ -1,6 +1,6 @@
 let display = document.getElementById("display");
 
-let isBackspaceHeld = false;
+//let holdTimer = null;
 
 const operators = ["+", "-", "/", "*", "%"];
 
@@ -20,7 +20,19 @@ function deleteLast() {
     display.value = display.value.slice(0, -1);
 }
 
-document.addEventListener("keydown", function(event) {
+function addOperator(op) {
+    if (display.value === "" && op !== "-") return;
+
+    let lastChar = display.value.slice(-1);
+
+    if (operators.includes(lastChar)){
+        display.value = display.value.slice(0. -1) - op;
+        return;
+    }
+    display.value += op
+}
+
+/*document.addEventListener("keydown", function(event) {
     let key = event.key;
 
 if (!isNaN(key) || key === ".") {
@@ -40,25 +52,36 @@ if(key === "-" && display.value === "") {
     return;
 }
 
-else if(operators.includes(key)){
+if(operators.includes(key)){
     let lastChar = display.value.slice(-1);
     if(display.value === "" || operators.includes(lastChar)) return;
      display.value += key;
 }
 
-else if(key === "Enter") {
+if(key === "Enter") {
+    event.preventDefault();
+    document.activeElement.blur();
     calculateResult();
 }
 
 else if(key === "Backspace") {
-    if (isBackspaceHeld) returns;
-    isBackspaceHeld = true;
+    event.preventDefault();
+
+    if (event.repeat) return;
+    
     deleteLast();
+
+if (!holdTimer) {
+    holdTimer = setTimeout(()=> {
+        clearDisplay();
+    }, 600);
+}
 }
 });
 
 document.addEventListener("keyup", function(event) {
-    if (event.key === "Backspace") {
-        Backspace = false;
-    }
-});
+if (event.key === "Backspace") {
+    clearTimeout(holdTimer);
+ holdTimer = null;
+}
+});*/
