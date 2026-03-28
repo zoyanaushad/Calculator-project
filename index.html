@@ -17,10 +17,10 @@
     <h1 class="calc">CALCULATOR</h1>
     <input type="text" id="display" readonly> <br> <br>
     <button onclick="clearDisplay()">C</button> <button data-key="Backspace" onclick="deleteLast()">⌫</button> <button onclick="calculateResult()">=</button> <br> <br>
-    <button data-key="7" onclick="press('7')">7</button> <button data-key="8" onclick="press('8')">8</button> <button data-key="9" onclick="press('9')">9</button> <button data-key="/" onclick="press('/')">/</button> <br> <br>
-    <button data-key="4" onclick="press('4')">4</button> <button data-key="5" onclick="press('5')">5</button> <button data-key="6" onclick="press('6')">6</button> <button data-key="*" onclick="press('*')">*</button> <br> <br>
-    <button data-key="1" onclick="press('1')">1</button> <button data-key="2" onclick="press('2')">2</button> <button data-key="3" onclick="press('3')">3</button> <button data-key="-" onclick="press('-')">-</button> <br> <br>
-    <button data-key="0" onclick="press('0')">0</button> <button data-key="." onclick="press('.')">.</button> <button data-key="%" onclick="press('%')">%</button> <button data-key="+" onclick="press('+')">+</button>
+    <button data-key="7" onclick="press('7')">7</button> <button data-key="8" onclick="press('8')">8</button> <button data-key="9" onclick="press('9')">9</button> <button data-key="/" onclick="addOperator('/')">/</button> <br> <br>
+    <button data-key="4" onclick="press('4')">4</button> <button data-key="5" onclick="press('5')">5</button> <button data-key="6" onclick="press('6')">6</button> <button data-key="*" onclick="addOperator('*')">*</button> <br> <br>
+    <button data-key="1" onclick="press('1')">1</button> <button data-key="2" onclick="press('2')">2</button> <button data-key="3" onclick="press('3')">3</button> <button data-key="-" onclick="addOperator('-')">-</button> <br> <br>
+    <button data-key="0" onclick="press('0')">0</button> <button data-key="." onclick="addDecimal('.')">.</button> <button data-key="%" onclick="addOperator('%')">%</button> <button data-key="+" onclick="addOperator('+')">+</button>
 </div>
 </div>
 </div>
