@@ -1,4 +1,4 @@
-button {
+/*button {
             text-align:center;
             width:80px;
             height:40px;
@@ -87,8 +87,7 @@ body{
     -webkit-text-stroke:1.5px rgb(106, 32, 175) ;
 }
 .sideimg{
-    width:25%;
-    transform:translate(115%,-217%);
+    transform:translate(70%, -70%);
 }
 #imgborder{
  border:3px solid black;
@@ -105,4 +104,5 @@ body{
 }
 .calc{
     color:rgb(113, 42, 180);
-}
+}*/
+
