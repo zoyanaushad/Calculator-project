@@ -105,4 +105,43 @@ body{
 .calc{
     color:rgb(113, 42, 180);
 }*/
+input {
+    width:380px;
+    height:80px;
+    border-radius:10px;
+    font-size: 30px;
+    text-align: right;
+    background-color: #fcf7f7;
+}
 
+button {
+    width:70px;
+    height:70px;
+    border-radius:100px;
+    font-size:30px;
+    margin:10px;
+}
+
+#result {
+    width:160px;
+}
+
+.lavender {
+    background-color: lavender;
+}
+
+.periwinkle {
+    background-color: #d8caf6;
+}
+
+.wisteria {
+    background-color: #c2a9ef;
+}
+
+.floral {
+    background-color: #ac88e8;
+}
+
+.amethyst {
+    background-color: #9667e0;
+}

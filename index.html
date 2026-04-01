@@ -27,12 +27,12 @@
 
     <input type="text" id="display" readonly> <br> <br>
 
-    <div class="buttons">
-    <button onclick="clearDisplay()">C</button> <button data-key="Back<space" onclick="deleteLast()">⌫</button> <button data-key="%" onclick="addOperator('%')">%</button> <button data-key="/" onclick="addOperator('/')">/</button> <br> <br>
-    <button data-key="7" onclick="press('7')">7</button> <button data-key="8" onclick="press('8')">8</button> <button data-key="9" onclick="press('9')">9</button> <button data-key="*" onclick="addOperator('*')">*</button> <br> <br>
-    <button data-key="4" onclick="press('4')">4</button> <button data-key="5" onclick="press('5')">5</button> <button data-key="6" onclick="press('6')">6</button> <button data-key="-" onclick="addOperator('-')">-</button> <br> <br>
-    <button data-key="1" onclick="press('1')">1</button> <button data-key="2" onclick="press('2')">2</button> <button data-key="3" onclick="press('3')">3</button> <button data-key="+" onclick="addOperator('+')">+</button> <br> <br>
-    <button data-key="0" onclick="press('0')">0</button> <button data-key="." onclick="addDecimal('.')">.</button> <button onclick="calculateResult()">=</button> 
+    <div>
+    <button class="lavender" onclick="clearDisplay()">C</button> <button class="lavender" data-key="Backspace" onclick="deleteLast()">⌫</button> <button class="lavender" data-key="%" onclick="addOperator('%')">%</button> <button class="lavender" data-key="/" onclick="addOperator('/')">/</button> <br> <br>
+    <button class="periwinkle" data-key="7" onclick="press('7')">7</button> <button class="periwinkle" data-key="8" onclick="press('8')">8</button> <button class="periwinkle" data-key="9" onclick="press('9')">9</button> <button class="periwinkle" data-key="*" onclick="addOperator('*')">*</button> <br> <br>
+    <button class="wisteria" data-key="4" onclick="press('4')">4</button> <button class="wisteria" data-key="5" onclick="press('5')">5</button> <button class="wisteria" data-key="6" onclick="press('6')">6</button> <button class="wisteria" data-key="-" onclick="addOperator('-')">-</button> <br> <br>
+    <button class="floral" data-key="1" onclick="press('1')">1</button> <button class="floral" data-key="2" onclick="press('2')">2</button> <button class="floral" data-key="3" onclick="press('3')">3</button> <button class="floral" data-key="+" onclick="addOperator('+')">+</button> <br> <br>
+    <button class="amethyst" data-key="0" onclick="press('0')">0</button> <button class="amethyst" data-key="." onclick="addDecimal('.')">.</button> <button class="amethyst" id="result" onclick="calculateResult()">=</button> 
     </div>
 
 </div>
