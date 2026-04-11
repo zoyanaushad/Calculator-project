@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 input {
     max-width: 320px;
     width: 90%;
@@ -279,4 +280,308 @@ color:rgb(19, 19, 103);
     text-align: center;
     margin:290px 0 0 300px;
   }
+=======
+input {
+    max-width: 320px;
+    width: 90%;
+    height:70px;
+    border-radius:10px;
+    font-size: 40px;
+    text-align: right;
+    background-color: #fcf7f7;
+    border: 5px solid #8c70ce;
+    box-shadow: 4px 3px 8px rgb(41, 40, 40);
+    color:#7147b5;
+    outline: none;
+}
+
+button {
+   max-width: 125px;
+  width: 4vw;
+  max-height: 60px;
+  height: 18vw;
+    border-radius:100px;
+    font-size:30px;
+    margin:5px;
+    box-shadow: 4px 3px 8px rgb(41, 40, 40);
+}
+
+#result {
+    width:125px;
+}
+
+.lavender {
+    background-color: lavender;
+    border-color:lavender;
+    color:#9667e0;
+}
+
+.periwinkle {
+    background-color: #d8caf6;
+    border-color:#d8caf6;
+    color:#ac88e8;
+}
+
+.wisteria {
+    background-color: #c2a9ef;
+    border-color:#c2a9ef;
+    color:#d8caf6;
+}
+
+.floral {
+    background-color: #ac88e8;
+    border-color:#ac88e8;
+    color:#d8caf6;
+}
+
+.amethyst {
+    background-color: #9667e0;
+    border-color:#9667e0;
+    color:lavender;
+}
+
+.lavender:hover{
+background-color:rgb(219, 219, 250);
+color:blueviolet;
+}
+
+.lavender:active{
+            background-color:rgb(247, 247, 249);
+            color:rgb(129, 66, 212);
+}
+
+.periwinkle:hover{
+background-color:#ccbcee;
+color:rgb(152, 65, 234);
+}
+
+.periwinkle:active{
+            background-color:#dad2ed;
+            color:rgb(124, 58, 211);
+}
+
+
+.wisteria:hover{
+background-color:#b79aee;
+color:rgb(218, 203, 233);
+}
+
+.wisteria:active{
+            background-color:#c0a7f0;
+            color:rgb(222, 217, 227);
+}
+
+.floral:hover{
+background-color:#a077e3;
+color:rgb(208, 191, 225);
+}
+
+.floral:active{
+            background-color:#a881e7;
+            color:rgb(218, 208, 229);
+}
+
+
+.amethyst:hover{
+background-color:#8c5dd8;
+color:rgb(203, 177, 230);
+}
+
+.amethyst:active{
+            background-color:#915ee1;
+            color:rgb(222, 207, 239);
+}
+
+body {
+    background-image: url("calculater\ bg.jpg");
+    background-size: cover;
+}
+
+.parent {
+    max-width: 450px;
+    width:100%;
+    display: flex;
+  justify-content: center;
+}
+
+.child {
+  max-width: 450px;
+  width: 80%;
+  background-color: #9e82e1;
+  margin: 40px auto 0 auto;   
+  padding: 50px 0 10px 0;
+  border-radius: 30px;
+  box-shadow: 4px 4px 15px rgb(41, 40, 40);
+}
+
+.line {
+  max-width: 350px;
+  width: 40vw;
+  position: absolute;
+  left: 70px;   
+  top: 150px;   
+
+}
+
+.heading {
+    max-width: 380px;
+  width: 40vw;
+  position: absolute;
+  font-size: 30px;
+  left: 35px;   
+  top: 45px;   
+color:rgb(19, 19, 103);
+}
+
+#p {
+    font-size: 20px;
+}
+
+.info {
+  width:10%;
+  position:absolute;
+  margin:280px 0 0 60px;
+  font-size: 20px;
+}
+
+#linkedin {
+  font-size: 20px;
+}
+
+#github{
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .child {
+  width: 80vw;
+  max-width: 360px;
+  padding: 25px 10px;
+  margin: 460px 0 0 0; 
+}
+
+
+   input {
+    width: 98%;
+    font-size: 28px;
+  }
+
+  button {
+  width: 18vw;
+  height: 18vw;
+  max-width: 50px;
+  max-height: 50px;
+  font-size: 22px;
+}
+  #result {
+    width: 38vw;
+    max-width: 120px;
+  }
+
+  .line {
+    width: 85%;
+    text-align: center;
+    margin:4px 0 0 0;
+    padding-right: 55px;
+  }
+
+  .heading {
+   width: 85%;
+    text-align: center;
+    margin:0 0 10px 0;
+  }
+
+ .info {
+  width: 60%;
+  text-align: center;
+  margin: 330px 0 0 80px;
+}
+
+}
+
+@media (max-width: 360px) {
+  .child {
+    margin-top: 460px;
+  }
+
+  .info {
+    margin-top: 330px;
+  }
+
+  button {
+    width: 13vw;
+    height: 13vw;
+    font-size: 22px;
+  }
+   #result {
+    width: 38vw;
+    max-width: 100px;
+  }
+
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  body {
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .child {
+    width: 80vw;        
+    max-width: 360px;   
+    padding: 25px 10px;
+    margin:400px 0 0 0 ;
+
+  }
+
+   input {
+    width: 98%;
+    font-size: 28px;
+  }
+
+  button {
+    width: 18vw;
+    height: 18vw;
+    max-width: 55px;
+    max-height: 55px;
+    font-size: 22px;
+  }
+
+  #result {
+    width: 38vw;
+    max-width: 120px;
+  }
+
+  .line {
+    width: 85%;
+    text-align: center;
+    margin:4px 0 0 22%;
+  }
+
+  .heading {
+    width: 100%;
+    text-align: center;
+    margin:0 0 0 60px;
+  }
+
+  .info{
+    width:20%;
+    text-align: center;
+    margin:290px 0 0 300px;
+  }
+>>>>>>> 54e462c (Updated code)
 }
